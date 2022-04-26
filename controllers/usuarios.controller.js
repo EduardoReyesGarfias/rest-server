@@ -13,15 +13,20 @@ const getUsuarioById = (req = request, res = response) => {
     res.send(`GET API - Controller - id: ${id}`);
 }
 
-const createUsuarios = (req, res = response) => {
-    res.send('Post api - controller');
+const createUsuarios = (req = request, res = response) => {
+
+    res.json({
+        ok: true,
+        msg: "POST - API - Controller",
+        data: req.body
+    })
 }
 
-const updateUsuarios = (req, res = response) => {
+const updateUsuarios = (req = request, res = response) => {
     res.send('Put api - controller');
 }
 
-const deleteUsuarios = (req, res = response) => {
+const deleteUsuarios = (req = request, res = response) => {
     res.send('Delete api - controller');
 }
 
