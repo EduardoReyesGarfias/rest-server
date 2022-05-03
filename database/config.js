@@ -5,12 +5,12 @@ const dbConnection = async() =>{
 
     try {
 
-        await mongoose.connect( process.env.MONGO_CNN, {
+        await mongoose.connect( process.env.MONGO_ATLAS, {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
 
-        console.log("Base de datos online");
+        console.log("Base de datos online de Atlas");
         
     } catch (error) {
 
